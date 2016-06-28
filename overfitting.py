@@ -34,3 +34,7 @@ poly_2 = smf.ols(formula='y ~ 1 + X + I(X**2)', data=train_df).fit()
 poly_2_test = smf.ols(formula='y ~ 1 + X + I(X**2)', data=test_df).fit()
 # R-squared = 0.964, p = 0.000
 
+""" Conclusion:
+The quadratic and linear fit models produce very similar results.
+Therefore using the more simple Linear Fit is appropriate.
+"""
